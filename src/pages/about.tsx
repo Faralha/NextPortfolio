@@ -3,20 +3,20 @@ import Image from 'next/image';
 export default function About() {
   return (
     <main>
-      <section className='px-4 py-8 md:px-20 md:py-16 lg:px-40 lg:py-24 xl:px-80 xl:py-32'>
+      <section className='px-4 py-3 md:px-20 md:py-16 lg:px-40 lg:py-24 xl:px-80 xl:py-32'>
         <h1 className='mb-10'>About Me?</h1>
 
         {/* Image */}
         <div className='relative'>
           <Image
-            src='/images/about/background.jpg'
+            src='/images/about/background.webp'
             height={200}
             width={600}
             alt='background'
             className='absolute top-0 left-0 w-full h-full py-4 object-cover z-0 rounded-lg opacity-30'
           />
           <Image
-            src='/images/about/me.jpg'
+            src='/images/about/me.webp'
             height={200}
             width={200}
             alt='me'
