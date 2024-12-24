@@ -1,56 +1,32 @@
-import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-const Navbar = () => {
-  const [active, setActive] = useState('home');
-
-  const handleClick = (page: string) => {
-    setActive(page);
-  };
+export default function Navbar() {
+  const router = useRouter();
+  const { pathname } = router;
 
   return (
     <nav>
       <ul>
-        <Link href={'/'} passHref>
-          <li
-            className={active === 'home' ? 'active' : ''}
-            onClick={() => handleClick('home')}
-          >
-            Home
-          </li>
+        <Link href='/' passHref>
+          <li className={pathname === '/' ? 'active' : ''}>Home</li>
         </Link>
-        <Link href={'/about'} passHref>
-          <li
-            className={active === 'about' ? 'active' : ''}
-            onClick={() => handleClick('about')}
-          >
-            About
-          </li>
+        <Link href='/about' passHref>
+          <li className={pathname === '/about' ? 'active' : ''}>About</li>
         </Link>
-        <Link href={'/gallery'} passHref>
-          <li
-            className={active === 'gallery' ? 'active' : ''}
-            onClick={() => handleClick('gallery')}
-          >
-            Gallery
-          </li>
+        <Link href='/gallery' passHref>
+          <li className={pathname === '/gallery' ? 'active' : ''}>Gallery</li>
         </Link>
-        <Link href={'/projects'} passHref>
-          <li
-            className={active === 'projects' ? 'active' : ''}
-            onClick={() => handleClick('projects')}
-          >
-            Projects
-          </li>
+        <Link href='/projects' passHref>
+          <li className={pathname === '/projects' ? 'active' : ''}>Projects</li>
         </Link>
-        
       </ul>
       <style jsx>{`
         nav {
           background: var(--background);
-          padding: 1.4rem;
+          padding: 1rem 2rem;
           display: flex;
-          justify-content: end;
+          justify-content: center;
         }
         ul {
           list-style: none;
@@ -59,16 +35,17 @@ const Navbar = () => {
         }
         li {
           cursor: pointer;
-          color: #fff;
+          padding: 0.5rem 1rem;
+          transition: background 0.3s ease;
+        }
+        li:hover {
+          background: rgba(255, 255, 255, 0.2);
         }
         .active {
           font-weight: bold;
-          border-bottom: 2px solid var(--foreground);
-          color: var(--foreground);
+          border-bottom: 2px solid currentColor;
         }
       `}</style>
     </nav>
   );
-};
-
-export default Navbar;
+}
