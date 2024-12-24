@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { MdArrowOutward } from 'react-icons/md';
 
 export default function Landing() {
@@ -7,14 +8,14 @@ export default function Landing() {
         
         {/* Hero */}
         <div className='flex flex-row justify-between w-full'>
-          <h1 className='font-azeret font-semibold text-5xl'>
+          <h1 className='font-azeret font-semibold text-5xl tracking-tight'>
             Web Developer,
             <br />
             Designer,
             <br />
             Tech Enthusiast
           </h1>
-          <p className='font-azeret font-light text-2xl text-right'>
+          <p className='font-azeret font-light text-2xl text-right tracking-tight'>
             Minimalist-Driven
             <br />
             Web Developer
@@ -23,14 +24,14 @@ export default function Landing() {
           </p>
         </div>
         <div className='flex flex-row justify-between w-full'>
-          <p className='font-azeret font-light text-2xl'>
-            Vue, React <br />
+          <p className='font-azeret font-light text-2xl tracking-tight'>
+            Vue, React, <br />
             Express, <br />
             Illustrator, <br />
             Photoshop, <br />
             You name it.
           </p>
-          <h1 className='font-azeret font-semibold text-7xl text-right'>
+          <h1 className='font-azeret font-semibold text-7xl text-right tracking-tight'>
             Muhammad Zufar
             <br />
             Al Hafidz
@@ -39,13 +40,13 @@ export default function Landing() {
 
         {/* CTA Button */}
         <div className='flex flex-row gap-3 justify-start w-full'>
-          <button className='flex flex-row gap-2 bg-foreground font-azeret font-semibold px-5 py-2 rounded-md text-background'>
+          <Link href='/contact' className='flex flex-row gap-2 bg-foreground font-azeret font-semibold px-5 py-2 rounded-md text-background'>
             <MdArrowOutward size={23} />
             Contact Me
-          </button>
-          <button className="flex flex-row gap-2 outline outline-foreground outline-1 font-azeret font-semibold px-5 py-2 rounded-md text-foreground">
+          </Link>
+          <Link href='/gallery' className="flex flex-row gap-2 outline outline-foreground outline-1 font-azeret font-semibold px-5 py-2 rounded-md text-foreground">
             Gallery
-          </button>
+          </Link>
         </div>
       </section>
     </div>
