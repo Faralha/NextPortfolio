@@ -40,11 +40,11 @@ export default function Landing() {
 
         {/* CTA Button */}
         <div className='flex flex-row gap-3 justify-start w-full'>
-          <Link href='/contact' className='flex flex-row gap-2 bg-foreground font-azeret font-semibold px-5 py-2 rounded-md text-background'>
+          <Link href='/about' className='flex flex-row gap-2 bg-foreground font-azeret font-semibold tracking-tight px-5 py-2 rounded-md text-background'>
             <MdArrowOutward size={23} />
-            Contact Me
+            About Me
           </Link>
-          <Link href='/gallery' className="flex flex-row gap-2 outline outline-foreground outline-1 font-azeret font-semibold px-5 py-2 rounded-md text-foreground">
+          <Link href='/gallery' className="flex flex-row gap-2 outline outline-foreground outline-1 font-azeret font-semibold tracking-tight px-5 py-2 rounded-md text-foreground">
             Gallery
           </Link>
         </div>
