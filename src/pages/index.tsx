@@ -11,7 +11,11 @@ export default function Home() {
         <meta name='description' content='Muhammad Zufar Al Hafidz' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main >
+      <main
+        style={{
+          background: 'linear-gradient(90deg, #1a1a1a 0%, #000000 100%)',
+        }}
+      >
         <Landing />
         <Gallery />
         <Article />

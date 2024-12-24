@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 export default function Gallery() {
   return (
     <main className='h-auto w-full'>
-      <section className='grid grid-cols-4'>
+      <section className='grid grid-cols-2 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 '>
         {/* Image Wrapper */}
         <div className='w-full aspect-w-1 aspect-h-1 opacity-25 hover:opacity-100 transition-opacity duration-300'>
           <Image

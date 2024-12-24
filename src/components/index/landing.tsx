@@ -1,21 +1,19 @@
 import Link from 'next/link';
-import { MdArrowOutward } from 'react-icons/md';
 
 export default function Landing() {
   return (
     <div>
-      <section className='flex flex-col items-center justify-center gap-7 h-screen w-full px-32'>
-        
+      <section className='flex flex-col items-center justify-center gap-7 h-auto w-full py-28 xl:px-32 lg:px-24 md:px-16 sm:px-10 px-5'>
         {/* Hero */}
         <div className='flex flex-row justify-between w-full'>
-          <h1 className='font-azeret font-semibold text-5xl tracking-tight'>
+          <h1 className='font-azeret font-semibold text-xl 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl tracking-tight'>
             Web Developer,
             <br />
             Designer,
             <br />
             Tech Enthusiast
           </h1>
-          <p className='font-azeret font-light text-2xl text-right tracking-tight'>
+          <p className='font-azeret font-light text-sm 2xl:text-2xl xl:text-xl lg:text-lg md:text-sm sm:text-sm text-right tracking-tight'>
             Minimalist-Driven
             <br />
             Web Developer
@@ -24,14 +22,14 @@ export default function Landing() {
           </p>
         </div>
         <div className='flex flex-row justify-between w-full'>
-          <p className='font-azeret font-light text-2xl tracking-tight'>
+          <p className='font-azeret font-light text-sm 2xl:text-2xl xl:text-xl lg:text-lg md:text-sm sm:text-sm tracking-tight'>
             Vue, React, <br />
             Express, <br />
             Illustrator, <br />
             Photoshop, <br />
             You name it.
           </p>
-          <h1 className='font-azeret font-semibold text-7xl text-right tracking-tight'>
+          <h1 className='font-azeret font-semibold text-xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-right tracking-tight'>
             Muhammad Zufar
             <br />
             Al Hafidz
@@ -40,12 +38,17 @@ export default function Landing() {
 
         {/* CTA Button */}
         <div className='flex flex-row gap-3 justify-start w-full'>
-          <Link href='/about' className='flex flex-row gap-2 bg-foreground font-azeret font-semibold tracking-tight px-5 py-2 rounded-md text-background'>
-            <MdArrowOutward size={23} />
-            About Me
-          </Link>
-          <Link href='/gallery' className="flex flex-row gap-2 outline outline-foreground outline-1 font-azeret font-semibold tracking-tight px-5 py-2 rounded-md text-foreground">
-            Gallery
+          <Link
+            href='/about'
+            className='flex flex-row gap-2 bg-foreground font-azeret font-semibold tracking-tight 2xl:px-8 xl:px-7 lg:px-6 md:px-5 sm:px-4 px-3 2xl:py-4 xl:py-3 lg:py-3 md:py-2 sm:py-2 py-1 rounded-md text-background 2xl:text-xl xl:text-lg lg:text-md md:text-sm sm:text-xs'
+          >
+            <p>About Me</p>
+        </Link>
+          <Link
+            href='/gallery'
+            className='flex flex-row gap-2 outline outline-foreground outline-1 font-azeret font-semibold tracking-tight 2xl:px-8 xl:px-7 lg:px-6 md:px-5 sm:px-4 px-3 2xl:py-4 xl:py-3 lg:py-3 md:py-2 sm:py-2 py-1 rounded-md text-foreground 2xl:text-xl xl:text-lg lg:text-md md:text-sm sm:text-xs'
+          >
+            <p>Gallery</p>
           </Link>
         </div>
       </section>
