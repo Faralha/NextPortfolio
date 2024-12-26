@@ -7,7 +7,7 @@
     "content": [
       {
         "paragraph": 
-        "Paradigmagz adalah sebuah akun yang tujuan mulanya sebagai media informatif. Awalnya nama ini adalah sebagai tugas wajib angkatan MTs atau SMP dari pihak OSIS dalam pembuatan mading offline, namun akibat bencana COVID, pembuatan sarana via daring juga dibuat. Saya sendiri awalnya bukan bagian inti dari Paradigmagz, namun melihat akun yang terbengkalai + waktu liburan yang panjang, saya bertekad untuk membuat barang satu-dua konten sendiri (walau akhirnya mati juga).",
+        "Paradigmagz adalah sebuah akun yang tujuan mulanya sebagai media informatif. Awalnya akun ini adalah tugas wajib angkatan MTs atau SMP dari pihak OSIS dalam pembuatan mading offline, namun akibat bencana COVID, pembuatan sarana via daring juga dibuat. Saya sendiri awalnya bukan bagian inti dari Paradigmagz, namun melihat akun yang terbengkalai + waktu liburan yang panjang, saya bertekad untuk membuat barang satu-dua konten sendiri (walau akhirnya mati juga).",
         "image": [
           "/images/gallery/design_1.webp",
           "/images/gallery/paradigmagz/2.png",
@@ -24,14 +24,27 @@
   },
   {
     "id": 2,
-    "title": "Second Post",
+    "title": "Flexoo Software House TC",
     "image": "/images/gallery/design_2.webp",
-    "description": "This is the second post"
+    "description": "Sebuah Software House yang dijalankan Himpunan Teknik Informatika ITS. Disini saya menjadi bagian Marketing, bukan ngoding.",
+    "content": [
+      {
+        "paragraph": "Bisa dibilang organisasi pertama yang saya tekuni selama menjadi Mahasiswa. Jarak waktu dari awal masuk memang lama, karena masih gagal move-on ketolak mabacup (spoiler: ordal). Saya sendiri masuk sini juga karena Close-Recruitment oleh kepala divisi Marketingnya sendiri. Selama 2 Semester, kami bertugas memenuhi segala kebutuhan promosi serta marketing mulai dari pamflet, brosur, serta feeds untuk mempromosikan layanan jasa Flexoo."
+      }
+    ]
   },
   {
     "id": 3,
     "image": "/images/gallery/design_3.webp",
-    "title": "Third Post",
-    "description": "This is the third post"
+    "title": "Media Jurnalistik OSHK",
+    "description": "Sedikit Kumpulan Desain selama menjabat sebagai Sekretaris Media dan Jurnalistik OSIS MA Husnul Khotimah.",
+    "content": [
+      {
+        "paragraph": "Kalau ngga ada Covid, saya gabakal bisa desain, dan saya gabakal masuk Medjur."
+      },
+      {
+        "paragraph": "Anyway, waktu berlalu dan perlahan saya yang ngga bisa desain mulai mengerti dan mahir, yang awalnya bikin mading skala besar aja ngga bisa sekarang udah biasa aja bikin koran yang tiap bulan ganti desain."
+      }
+    ]
   }
 ]

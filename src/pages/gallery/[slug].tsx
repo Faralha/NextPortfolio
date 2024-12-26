@@ -84,12 +84,14 @@ export default function GalleryItem({ item }: { item: GalleryItem }) {
                           </div>
                         ))}
                       </div>
-                      <button className='embla__prev' onClick={scrollPrev}>
-                        <FaCaretLeft size={30}/>
-                      </button>
-                      <button className='embla__next' onClick={scrollNext}>
-                        <FaCaretRight size={30}/>
-                      </button>
+                      <div className='flex justify-end'>
+                        <button className='embla__prev' onClick={scrollPrev}>
+                          <FaCaretLeft size={30} />
+                        </button>
+                        <button className='embla__next' onClick={scrollNext}>
+                          <FaCaretRight size={30} />
+                        </button>
+                      </div>
                     </div>
                   </div>
                 )}

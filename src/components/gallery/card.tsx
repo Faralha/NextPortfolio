@@ -19,8 +19,8 @@ export default function Card({ image, title, description }: CardProps) {
         />
 
         <div className='p-4'>
-          <h1 className="text-xl font-bold tracking-tight">{title}</h1>
-          <p className="tracking-tighter font-mono line-clamp-3">{description}</p>
+          <h1 className="text-xl font-bold tracking-tighter leading-7">{title}</h1>
+          <p className="leading-5 opacity-80 font-sans line-clamp-3">{description}</p>
         </div>
       </section>
     </main>

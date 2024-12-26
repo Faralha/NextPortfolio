@@ -14,7 +14,7 @@ export default function Gallery() {
           />
         </div>
         <div className='w-full aspect-w-1 aspect-h-1 opacity-25 hover:opacity-100 transition-opacity duration-300'>
-          <Image
+        <Image
             src='/images/gallery/design_2.webp'
             layout='fill'
             objectFit='cover'
