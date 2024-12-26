@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Landing() {
   return (
     <div>
-      <section className='flex flex-col items-center justify-center gap-7 h-auto w-full py-28 xl:px-32 lg:px-24 md:px-16 sm:px-10 px-5'>
+      <section className='flex flex-col items-center justify-center gap-7 h-auto w-full py-28 container-custom'>
         {/* Hero */}
         <div className='flex flex-row justify-between w-full'>
           <h1 className='font-azeret font-semibold text-xl 2xl:text-5xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl tracking-tight'>

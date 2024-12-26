@@ -19,3 +19,15 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.container-custom {
+  @apply xl:px-32 lg:px-24 md:px-16 sm:px-10 px-5;
+}
+
+.container-small{
+  @apply px-4 py-3 md:px-14 md:py-10 lg:px-40 lg:py-20 xl:px-80 xl:py-20;
+}
+
+.text-primary{
+  @apply text-5xl font-bold tracking-tight;
+}

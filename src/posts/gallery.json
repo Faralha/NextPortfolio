@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "/images/gallery/design_1.webp",
+    "title": "Paradigmagz Feed(s)",
+    "description": "This is the first post"
+  },
+  {
+    "id": 2,
+    "title": "Second Post",
+    "image": "/images/gallery/design_2.webp",
+    "description": "This is the second post"
+  },
+  {
+    "id": 3,
+    "image": "/images/gallery/design_3.webp",
+    "title": "Third Post",
+    "description": "This is the third post"
+  }
+]
