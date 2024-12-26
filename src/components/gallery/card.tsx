@@ -9,7 +9,7 @@ interface CardProps {
 export default function Card({ image, title, description }: CardProps) {
   return (
     <main>
-      <section className='bg-zinc-950 rounded-md shadow-md overflow-hidden h-80 w-[20rem]'>
+      <section className='outline outline-zinc-700 outline-1 rounded-md shadow-md overflow-hidden h-80 w-[20rem] hover:scale-105 transition-transform duration-200'>
         <Image
           height={200}
           width={200}

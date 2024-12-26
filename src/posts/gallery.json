@@ -3,7 +3,24 @@
     "id": 1,
     "image": "/images/gallery/design_1.webp",
     "title": "Paradigmagz Feed(s)",
-    "description": "This is the first post"
+    "description": "Media Informasi yang mulanya merupakan tugas angkatan dari OSIS saat MTs/SMP",
+    "content": [
+      {
+        "paragraph": 
+        "Paradigmagz adalah sebuah akun yang tujuan mulanya sebagai media informatif. Awalnya nama ini adalah sebagai tugas wajib angkatan MTs atau SMP dari pihak OSIS dalam pembuatan mading offline, namun akibat bencana COVID, pembuatan sarana via daring juga dibuat. Saya sendiri awalnya bukan bagian inti dari Paradigmagz, namun melihat akun yang terbengkalai + waktu liburan yang panjang, saya bertekad untuk membuat barang satu-dua konten sendiri (walau akhirnya mati juga).",
+        "image": [
+          "/images/gallery/design_1.webp",
+          "/images/gallery/paradigmagz/2.png",
+          "/images/gallery/paradigmagz/3.png",
+          "/images/gallery/paradigmagz/4.png",
+          "/images/gallery/paradigmagz/5.png",
+          "/images/gallery/paradigmagz/6.png"
+        ]
+      },
+      {
+        "paragraph": "Status akunnya udah di-Takeover sama saya secara sepihak. Gaada Content-Writernya, jadi ngga pernah aktif lagi."
+      }
+    ]
   },
   {
     "id": 2,
