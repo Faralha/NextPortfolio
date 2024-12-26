@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "image": "/images/gallery/website_1.webp",
+    "title": "Tropica Sweets",
+    "link": "https://tropicasweets.com",
+    "description": "Landing page for a Palm Sugar Export Company based in Indonesia",
+    "content": [
+      {
+        "paragraph": "As my first ever Professional Job, i chose Vue + NuxtJS since its the only techstack i mastered. The Client request a simple Landing Page for its Sugar Export Company. I Personally designed and code the whole website myself, alongside my busy college tasks. Cant say its pleasant, but the jobs done ontime.",
+        "image": [
+          "/images/gallery/website_1.webp",
+          "/images/projects/tropicasweets/2.png",
+          "/images/projects/tropicasweets/3.png",
+          "/images/projects/tropicasweets/4.png",
+          "/images/projects/tropicasweets/5.png"
+        ]
+      },
+      {
+        "paragraph": "Everything was set by myself, from UI/UX Designing to Code to Deployment, Domain Registration, and Server Purchasing. I Kinda get the glimpse on how CI/CD a website works with this."
+      }
+    ]
+  }
+]

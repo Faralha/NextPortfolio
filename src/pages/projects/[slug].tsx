@@ -18,6 +18,7 @@ interface GalleryItem {
   image: string;
   description: string;
   content?: ContentItem[];
+  link?: string;
 }
 
 export default function GalleryItem({ item }: { item: GalleryItem }) {
@@ -59,6 +60,13 @@ export default function GalleryItem({ item }: { item: GalleryItem }) {
       <div className='relative z-10 p-8'>
         <h1 className='text-5xl tracking-tight font-bold'>{item.title}</h1>
         <p className='font-sans opacity-60 mt-2'>{item.description}</p>
+        {item.link && (
+          <a href={item.link} target='_blank' rel='noreferrer'>
+            <p className='mt-2 mb-0 tracking-tight'>
+              Live Demo/Production: <span className="underline text-blue-500">{item.link}</span>
+            </p>
+          </a>
+        )}
         {/* Content */}
         <section className='mt-10'>
           {item.content &&
@@ -104,7 +112,7 @@ export default function GalleryItem({ item }: { item: GalleryItem }) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const filePath = path.join(process.cwd(), 'src/posts/gallery.json');
+  const filePath = path.join(process.cwd(), 'src/posts/projects.json');
   const jsonData = fs.readFileSync(filePath, 'utf8');
   const galleryItems = JSON.parse(jsonData);
 
@@ -116,7 +124,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const filePath = path.join(process.cwd(), 'src/posts/gallery.json');
+  const filePath = path.join(process.cwd(), 'src/posts/projects.json');
   const jsonData = fs.readFileSync(filePath, 'utf8');
   const galleryItems = JSON.parse(jsonData);
   const item = galleryItems.find(

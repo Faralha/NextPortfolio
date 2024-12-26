@@ -5,6 +5,9 @@ export default function Navbar() {
   const router = useRouter();
   const { pathname } = router;
 
+  const isActive = (path:string) =>
+    pathname === path || pathname.startsWith(`${path}/`);
+
   return (
     <nav>
       <ul>
@@ -15,10 +18,10 @@ export default function Navbar() {
           <li className={pathname === '/about' ? 'active' : ''}>About</li>
         </Link>
         <Link href='/gallery' passHref>
-          <li className={pathname === '/gallery' ? 'active' : ''}>Gallery</li>
+          <li className={isActive('/gallery') ? 'active' : ''}>Gallery</li>
         </Link>
         <Link href='/projects' passHref>
-          <li className={pathname === '/projects' ? 'active' : ''}>Projects</li>
+          <li className={isActive('/projects') ? 'active' : ''}>Projects</li>
         </Link>
       </ul>
       <style jsx>{`

@@ -29,7 +29,7 @@ export default function Landing() {
             Photoshop, <br />
             You name it.
           </p>
-          <h1 className='font-azeret font-semibold text-xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-right tracking-tight'>
+          <h1 className='font-azeret font-semibold text-2xl 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-right tracking-tight'>
             Muhammad Zufar
             <br />
             Al Hafidz
