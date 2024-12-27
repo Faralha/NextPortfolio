@@ -21,7 +21,7 @@ export default function MyApp({ Component, pageProps }) {
         }}
       >
         <Component {...pageProps} />
-        <Footer className="z-10" />
+        <Footer className="" />
       </main>
     </>
   );
